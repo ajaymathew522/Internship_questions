@@ -5,7 +5,7 @@
     "colab": {
       "name": "Untitled1.ipynb",
       "provenance": [],
-      "authorship_tag": "ABX9TyOFfhraR3fjXuw6qX3GVMC1",
+      "authorship_tag": "ABX9TyP0CijTCOfEfgE1Y0n9fv7m",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -26,6 +26,16 @@
       ]
     },
     {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5N7-fX7ITSHJ",
+        "colab_type": "text"
+      },
+      "source": [
+        "#Importing Libraries"
+      ]
+    },
+    {
       "cell_type": "code",
       "metadata": {
         "id": "gyN1E4cR0J5T",
@@ -39,6 +49,16 @@
       ],
       "execution_count": 1,
       "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3FGHyuw4TLRg",
+        "colab_type": "text"
+      },
+      "source": [
+        "#Used Octoparse to collect the data"
+      ]
     },
     {
       "cell_type": "code",
@@ -199,6 +219,16 @@
       "outputs": []
     },
     {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3PTIa_sATddZ",
+        "colab_type": "text"
+      },
+      "source": [
+        "#Removing currency symbols and commas"
+      ]
+    },
+    {
       "cell_type": "code",
       "metadata": {
         "id": "IQ0tACES34o8",
@@ -356,6 +386,16 @@
       ]
     },
     {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0QOXyioRTne0",
+        "colab_type": "text"
+      },
+      "source": [
+        "#Removing the Percentage sign"
+      ]
+    },
+    {
       "cell_type": "code",
       "metadata": {
         "id": "4FMhewpU4zGD",
@@ -502,6 +542,16 @@
       ]
     },
     {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "OsGFavLkTtF0",
+        "colab_type": "text"
+      },
+      "source": [
+        "#Converting the object types to int"
+      ]
+    },
+    {
       "cell_type": "code",
       "metadata": {
         "id": "GZBx0IfsDJqN",
@@ -575,6 +625,16 @@
           ],
           "name": "stdout"
         }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ALdWJKbCTzno",
+        "colab_type": "text"
+      },
+      "source": [
+        "#Creating seperate dataframes according to status"
       ]
     },
     {
@@ -798,6 +858,16 @@
       "outputs": []
     },
     {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ZQjlx13yT9ZR",
+        "colab_type": "text"
+      },
+      "source": [
+        "#We will only be using the normal dataframe for classification because the \"Ended\" ones cannot be invested into and \"In demand\" ones are already a good option"
+      ]
+    },
+    {
       "cell_type": "code",
       "metadata": {
         "id": "VaSFaiCsH9H0",
@@ -809,6 +879,16 @@
       ],
       "execution_count": 16,
       "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "q2SMCNPoUZUJ",
+        "colab_type": "text"
+      },
+      "source": [
+        "#Using K means to classify the dataframe. We find 3 should be the number of clusters"
+      ]
     },
     {
       "cell_type": "code",
@@ -1149,6 +1229,16 @@
           },
           "execution_count": 23
         }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6Mku6hjzUoHE",
+        "colab_type": "text"
+      },
+      "source": [
+        "There were severe power outages at home, so I couldn't give the best answer to the question."
       ]
     }
   ]
